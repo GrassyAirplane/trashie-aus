@@ -1,0 +1,112 @@
+.hero-main {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Two columns with equal width */
+    background-color: var(--purple-background-color);
+    align-items: center;
+    border-top: solid 2px black;
+}
+
+/* html {
+    border-bo
+    border: solid 1px black;
+} */
+
+/* LEFT & RIGHT */
+.hero-div-leftside {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    border-right: solid 2px black;
+    height: 100%;
+
+    padding: 1rem 3rem;
+}
+
+.hero-div-rightside {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: var(--yellow-background-color);
+    height: 100%;
+}
+
+/* LEFT */
+.hero-main-h2 {
+    font-family: Georgia;
+
+    font-size: 5rem;
+    line-height: 4.5rem;
+    color: white; /* Set the text color to white */
+    text-shadow: -2px -2px 0 black, 2px -2px 0 black, -2px 2px 0 black, 2px 3px 0 black;
+    /* The values above (-2px, 2px, etc.) control the position of the shadow. Adjust as needed. */
+    transition: line-height 0.5s ease; /* Add a transition for the line-height property */
+}
+
+.hero-main-div-text {
+    font-size: 1.3rem;
+    font-weight: bold;
+    line-height: 1.95rem;
+    margin: 1.5rem 0 1.5rem 0;
+}
+
+
+.hero-main-div-button {
+    align-self: flex-start;
+    background-color: whitesmoke;
+    border: 2px solid black;
+    border-radius: 6px;
+    box-shadow: inset 0 0px 0 black,
+                3px 3px 0 black;
+    cursor: pointer;
+    font-family: inherit;
+    font-size: 2rem;
+    font-weight: bold;
+    outline: none;
+    padding: 1rem 3rem;
+    transition: all 0.3s ease; 
+}
+
+.hero-main-div-button:hover {
+    transform: translate(-5px, -5px); /* Move up and left on hover */
+}
+
+/* BONUS */
+.hero-span-special {
+    /* background: linear-gradient(to right, 
+    #ffbf00,
+    #ffc824,
+    #fccb44,
+    #ffd561,
+    #ffd153,
+    #fece4b,
+    #ffc423,
+    #ffbb00
+    ); */
+    background: linear-gradient(to right, 
+    #ffd700,
+    #ffd600,
+    #ffd300,
+    #ffcf00,
+    #ffc800,
+    #ffc200,
+    #ffbb00,
+    #ffb500
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 200%;
+    background-position: left;
+    animation: shine 2s linear infinite;
+    cursor: pointer;
+    text-shadow: 2px -2px 0 black;
+}
+
+@keyframes shine {
+    50% {
+        background-position: right;
+    }
+}
