@@ -5,10 +5,6 @@ import "./Hero.css"
 const Hero =() => {
     const items = ["shirts", "towels", "pants", "dresses", "socks"];
     const [currentItemIndex, setCurrentItemIndex] = useState(0);
-  
-    const switchItem = () => {
-        setCurrentItemIndex(prevIndex => (prevIndex + 1) % items.length);
-    };
 
     useEffect(() => {
         const intervalId = setInterval(() => {
@@ -16,13 +12,13 @@ const Hero =() => {
         }, 1000); // Shift every 0.5 seconds
 
         return () => clearInterval(intervalId);
-    }, []); // Run only once on component mount
+    }, [items.length]); // Run only once on component mount
 
     return (
         <main className="hero-main">
             <div className="hero-div-leftside">
                 <h2 className="hero-main-h2">Recycling meets Rewards</h2>
-                <div className="hero-main-div-text">With <span className="hero-span-special">EcoSack™</span>, recycling in "bulk" is rewarding and as easy as returning online products. Curious to learn more? Leave us your details!</div>
+                <div className="hero-main-div-text">With <span className="hero-span-special">EcoSack™</span>, recycling in &quot;bulk&quot; is rewarding and as easy as returning online products. Curious to learn more? Leave us your details!</div>
                 <a href="#contact"><div className="hero-main-div-button">Get In Touch</div></a>
             </div>
             <div  className="hero-div-rightside">
