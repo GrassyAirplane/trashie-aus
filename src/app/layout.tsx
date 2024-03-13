@@ -16,6 +16,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+        <title>EcoSack</title>
+        <meta name="description" content="A college student startup looking to help make recycling garments more convenient, fun and rewarding.">
+        </meta>
+      </head>
       <body className={inter.className}>{children}</body>
     </html>
   );

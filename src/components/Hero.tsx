@@ -26,7 +26,7 @@ const Hero =() => {
                     Buy our Sack <br></br>
                     Fill it with <span className="type-words">{items[currentItemIndex]}</span> <br></br>
                     {/* "shirts, towels, pants, dresses, socks", */}
-                    Print our Shipping Label <br></br>
+                    Print our <span className="hero-phone-invisible">Shipping</span> Label <br></br>
                     Drop it off <br></br>
                     Earn <span className="hero-span-italics">Rewards</span>
                 </div>
