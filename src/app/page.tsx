@@ -8,9 +8,11 @@ import Head from "next/head";
 export default function Home() {
   return (
     <>  
-      <Hero></Hero>
-      <Contact></Contact>
-      <Footer></Footer>
+      <div className="home-container">
+        <Hero></Hero>
+        <Contact></Contact>
+        <Footer></Footer>
+      </div>
     </>
   );
 }

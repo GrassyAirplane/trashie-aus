@@ -1,6 +1,22 @@
+"use client"
+import { useEffect, useState } from "react";
 import "./Hero.css"
 
 const Hero =() => {
+    const items = ["shirts", "towels", "pants", "dresses", "socks"];
+    const [currentItemIndex, setCurrentItemIndex] = useState(0);
+  
+    const switchItem = () => {
+        setCurrentItemIndex(prevIndex => (prevIndex + 1) % items.length);
+    };
+
+    useEffect(() => {
+        const intervalId = setInterval(() => {
+            setCurrentItemIndex(prevIndex => (prevIndex + 1) % items.length);
+        }, 1000); // Shift every 0.5 seconds
+
+        return () => clearInterval(intervalId);
+    }, []); // Run only once on component mount
 
     return (
         <main className="hero-main">
@@ -10,7 +26,14 @@ const Hero =() => {
                 <a href="#contact"><div className="hero-main-div-button">Get In Touch</div></a>
             </div>
             <div  className="hero-div-rightside">
-                Order Bag = Fill bag = Ship Bag = Earn Rewards 
+                <div className="hero-div-rightside-div">
+                    Buy our Sack <br></br>
+                    Fill it with <span className="type-words">{items[currentItemIndex]}</span> <br></br>
+                    {/* "shirts, towels, pants, dresses, socks", */}
+                    Print our Shipping Label <br></br>
+                    Drop it off <br></br>
+                    Earn <span className="hero-span-italics">Rewards</span>
+                </div>
             </div>
         </main>
     )

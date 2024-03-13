@@ -1,0 +1,19 @@
+.ending-container {
+    background-color: var(--purple-background-color);
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ending-h2 {
+    font-family: Georgia;
+
+    font-size: 5rem;
+    line-height: 4.5rem;
+    color: white; /* Set the text color to white */
+    text-shadow: -2px -2px 0 black, 2px -2px 0 black, -2px 2px 0 black, 2px 3px 0 black;
+    /* The values above (-2px, 2px, etc.) control the position of the shadow. Adjust as needed. */
+    transition: line-height 0.5s ease; /* Add a transition for the line-height property */
+}

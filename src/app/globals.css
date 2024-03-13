@@ -28,3 +28,9 @@ a {
   font-weight: normal;
   font-style: normal;
 }
+
+/* MAIN CONTAINER */
+.home-container{
+  display: grid;
+  grid-template-columns: 1fr;
+}
