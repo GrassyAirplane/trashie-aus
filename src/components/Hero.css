@@ -32,7 +32,7 @@
 
     background-color: var(--yellow-background-color);
     height: 100%;
-    padding: 3rem;
+    /* padding: 3rem; */
 }
 
 .hero-div-rightside-div {
@@ -157,7 +157,7 @@
     }
 }
 
-@media (max-width: 472px) {
+@media (max-width: 492px) {
     .form {
         width: 100%;
         height: 100vh;
@@ -184,6 +184,8 @@
     .hero-div-rightside {
         padding: 0;
         width: 100vw;
+        display: flex;
+        justify-content: center;
     }
 
     .hero-main-div-text {
@@ -196,7 +198,11 @@
     }
 
     .hero-div-rightside-div {
-        /* font-size: 2rem; */
+        display: inline-block;
+    }
+
+    .type-words {
+        font-size: 1.5rem;
     }
 }
 
