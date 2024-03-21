@@ -155,6 +155,25 @@
     .footer-bottom-row {
         padding: 3rem 0 3rem 3rem;
     }
+
+    .form {
+        width: 100%;
+        height: 100vh;
+        border-radius: 0;
+        border: 0px solid black;
+
+        border-top: 1px solid black;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 0;
+    }
+
+    .contact-section {
+        padding-top: 0;
+    }
 }
 
 @media (max-width: 492px) {
@@ -203,6 +222,11 @@
 
     .type-words {
         font-size: 1.5rem;
+    }
+
+    .hero-main-div-button {
+        padding: 1rem 1rem;
+        
     }
 }
 

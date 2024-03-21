@@ -19,11 +19,11 @@ const Hero =() => {
             <div className="hero-div-leftside">
                 <h2 className="hero-main-h2">Recycling meets Rewards</h2>
                 <div className="hero-main-div-text">With <span className="hero-span-special">EcoSack™</span>, recycling in &quot;bulk&quot; is rewarding and as easy as returning online products. Curious to learn more? Leave us your details!</div>
-                <a href="#contact"><div className="hero-main-div-button">Get In Touch</div></a>
+                <a href="#contact"><div className="hero-main-div-button">Get An EcoSack!</div></a>
             </div>
             <div  className="hero-div-rightside">
                 <div className="hero-div-rightside-div">
-                    Buy our Sack <br></br>
+                    Get our Sack <br></br>
                     Fill it with <span className="type-words">{items[currentItemIndex]}</span> <br></br>
                     {/* "shirts, towels, pants, dresses, socks", */}
                     Print our <span className="hero-phone-invisible">Shipping</span> Label <br></br>

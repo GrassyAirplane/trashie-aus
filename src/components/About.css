@@ -1,0 +1,118 @@
+.about-section {
+    width: 100vw;
+    height: 100vh;
+    /* background-color: black; */
+    border-top: solid 2px black;
+
+    /* display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; */
+
+    padding-bottom: 5%;
+
+    display: grid;
+    grid-template-columns: 1fr; /* Single column grid */
+    grid-template-rows: 1fr 1fr;
+    /* Center content in the grid */
+}
+
+.about-article {
+    /* background-color: var(--yellow-background-color); */
+    background-color: white;
+
+    width: 80%;
+    height: 80%;
+    border-radius: 1.2rem;
+    
+    font-size: 1.5rem;
+    font-weight: bold;
+    /* box-shadow: inset 0 0px 0 black, 3px 3px 0 var(--); */
+}
+
+.about-div-text {
+    text-align: center;
+    font-size: 2.7rem;
+    line-height: 3.8rem;
+
+    font-weight: bold;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.about-article {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding-right: 3rem;
+    padding-left: 3rem;
+}
+
+.about-div-oval {
+    background-color: var(--yellow-background-color);
+    border-radius: 15rem;
+    /* width: 100%; */
+    height: 100%;
+    border: 2px solid black;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 2rem;
+}
+
+.about-div-oval-inner {
+    height: 100%;
+    border: 2px solid black;
+    background-color: var(--yellow-background-color);
+    border-radius: 30rem;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    display: flex;
+    position: relative;
+}
+
+/* INNER CIRCLE */
+.about-div-oval-top {
+    justify-content: space-between;
+    padding-left: 16%;
+    padding-right: 16%;
+    position: absolute;
+    top: -19px;
+    bottom: auto;
+    left: 0%;
+    right: 0%; 
+}
+
+.about-div-oval-wrap-1 {
+    text-align: center;
+    margin-left: 0.5vw;
+    padding-left: 2.5vw;
+    padding-right: 8rem;
+    position: relative;
+}
+
+.idea-loop-text-bg {
+    background-color: var(--yellow-dark);
+    position: absolute;
+    top: 0%;
+    bottom: 0%;
+    left: 0.65rem;
+    right: 0%;
+}
+
+/* INNER CIRCLE */
+
+@media (max-width: 1300px) {
+    .about-div-text {
+        font-size: 2rem;
+        line-height: 2.5rem;
+    }
+}
